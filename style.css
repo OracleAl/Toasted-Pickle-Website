@@ -132,8 +132,8 @@ main {
 .bar {
     width: 5vw;
     height: 2vh;
-    /* border: 4px solid #768d3b; */
-    border: 4px solid #f2d283;
+    border: 4px solid #768d3b;
+    /* border: 4px solid #f2d283; */
     border-radius: 10px;
     margin: 5px;
     cursor: pointer;
@@ -202,7 +202,7 @@ input[name="r"]{
     gap: 3vh;
 }
 #our-story p {
-    width: 50vw;
+    width: 71vw;
     color: #f2d283;
     font-size: 20px;
 }
