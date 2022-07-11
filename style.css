@@ -86,6 +86,10 @@ main {
     width: 100%;
     background-color: #f2d283;
 }
+#papa-zeke-image {
+    min-width: 100%;
+    min-height: 100%;
+}
 
 /* menu section */
 #menu {
