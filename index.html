@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>The Toasted Pickle</title>
     <link rel="icon" type="image/x-icon" href="/images/pickle-icon.png">
+    <script src="index.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +20,41 @@
             <a href=""><img id="order-img" alt="Order Now!" src="/images/order-now3.gif"></a>
         </div>
     </header>
+    <!-- Sticky nav bar -->
     <div id="sticky-nav">
         <ul>
-            <li><a href="#" class="nav-links"><img id="pickle-img" src="/images/toasted-logo-small.png"></a></li>
-            <li><a href="#menu" class="nav-links">Menu</a></li>
-            <li><a href="#our-story" class="nav-links">Our Story</a></li>
-            <li><a href="#locations" class="nav-links">Locations</a></li>
-            <li><a href="#form" class="nav-links">Contact</a></li>
-            <li><a href="" class="nav-links">Shooter</a></li>
+            <li><a href="#"><img id="pickle-img" src="/images/toasted-logo-small.png"></a></li>
+            <li><a href="#menu" id="link-1" class="nav-links">Menu</a></li>
+            <li><a href="#our-story" id="link-2" class="nav-links">Our Story</a></li>
+            <li><a href="#locations" id="link-3" class="nav-links">Locations</a></li>
+            <li><a href="#form" id="link-4" class="nav-links">Contact</a></li>
+            <li><a href="" id="link-5" class="nav-links">Shooter</a></li>
         </ul>
     </div>
     <main>
-        <div id="video">
-            <!-- <iframe id="youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/z4rvxpbm9Ms" title="The Road Trip Masters Visit Grand Haven and The Toasted Pickle - Preview" frameborder="0"></iframe> -->
-            <img id="papa-zeke-image" src="/images/papa-zeke.jpg" alt="Papa Zeke">
+        <!-- This section is a bit complicated but it controls the slideshow -->
+        <div id="video-container">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            <div id="video">
+                <img class="slideshow-images" src="/images/papa-zeke.jpg" alt="Papa Zeke">
+                <img class="slideshow-images" src="/images/toasted-busy-header.png" alt="">
+                <img class="slideshow-images" src="/images/toasted-three-panel.jpg" alt="">
+                <img class="slideshow-images" src="/images/toasted-platter.jpg" alt="">
+                <img class="slideshow-images" src="/images/toasted-supercar.jpg" alt="">
+            </div>
+            <div class="slider-nav">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
         </div>
+
         <div id="menu">
             <img id="our-menu-img" src="/images/our-menu.png" alt="Our menu">
             <p>We're dillighted to say we are always working on updates to the menu at The Toasted Pickle! Weekly specials are avaialable - 
@@ -50,10 +71,12 @@
                 This isn't just another "sandwich shop". No sireee... This is an experience that will put a smile on your face, a hop in your step, 
                 and a tingle on your tongue—always served with a pickle on the side! Because as Papa Zeke always used to say, "If you ever find yourself in a pickle, eat your way out."</p>
         </div>
+
         <div id="store-photos-container">
             <img class="store-images" src="/images/grand-haven-store.png" alt="Grand Haven Store">
             <img class="store-images" src="/images/rockford-store.png" alt="Rockford Store">
         </div>
+
         <div id="locations">
             <img src="/images/location-header.png" alt="Find us here">
             <div id="locations-container">
@@ -119,6 +142,7 @@
                 </div>
             </div>
         </div>
+
         <div id="contact-us">
             <img id="contact-image" src="/images/contact-us.png" alt="Contact us">
             <div id="form">
