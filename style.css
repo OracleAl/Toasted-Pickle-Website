@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Logo and order now section */
+header {
+    height: 100%;
+}
+#masthead {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(34, 143, 34);
+    background-image: url(/images/texture-green-large.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+#logo-img {
+    height: 15vh;
+}
+#order-img {
+    height: 7vh;
+}
+
+/* Your cool little animation */
+#order-img:hover {
+    animation: order-sway 2s infinite;
+}
+@keyframes order-sway {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-10deg);}
+    75% {transform: rotate(10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* sticky nav bar */
+#sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 5vh;
+    background-image: url(/images/texture-green-large.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sticky-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+#sticky-nav ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.nav-links {
+    color: #f2d283;
+    text-decoration: none;
+}
+/* to-do: add ease in animation for smaller logo image? */
+#pickle-img {
+    height: 5vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* video player - can have slideshow or other content here */
+#video {
+    height: 80vh;
+    width: 100%;
+    background-color: #f2d283;
+}
+
+/* menu section */
+#menu {
+    text-align: center;
+    background-image: url(/images/texture-orange-medium.png);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+#menu p {
+    width: 70vw;
+    color: #f2d283;
+    font-size: 20px;
+}
+.underlined-links {
+    color: #f2d283;
+    font-size: 20px;
+}
+
+/* our story section */
+/* This text is too long i think... people wont read it */
+#our-story {
+    text-align: center;
+    background-image: url(/images/texture-green-medium.png);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+#our-story p {
+    width: 50vw;
+    color: #f2d283;
+    font-size: 20px;
+}
+
+/* store photos section */
+#store-photos-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+.store-images {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* locations section */
+#locations {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    background-image: url(/images/texture-yellow-medium.png);
+}
+#locations-container {
+    height: 70vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
+#grand-haven-location h1, #rockford-location h1 {
+    color: #ae4b25;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+#grand-haven-location p, #rockford-location p {
+    color: #ae4b25;
+    font-weight: bold;
+    font-size: 20px;
+}
+#order-now-gh-image, #order-now-rockford-image {
+    width: 50%;
+}
+
+/* contact us section */
+#contact-us {
+    height: 50vh;
+    width: 100%;
+    background-image: url(/images/texture-green-medium.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#form {
+    height: 75%;
+    width: 100%;
+    text-align: center;
+}
